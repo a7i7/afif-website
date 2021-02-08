@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   	<link rel="stylesheet" type="text/css" href="resume.css" />
+    <meta charset="utf-8">
+  </head>
+  <body class="body">
+  	<div class="container">
+
+  		<h1>
+  			Afif Ahmed
+  		</h1>
+  		<h3>
+  			Software Engineer
+  		</h3>
+
+  			afif.ahmed@hotmail.com, +6594899827
+		<hr>
+		<h1>
+			Work experience
+		</h1>
+  		<hr>
+  		<h2>
+  			Google (2016 - Present)
+  		</h2>
+
+		<h2>
+  			Tez Android App
+  		</h2>
+
+  		Tez is a payment app built for the Indian market using UPI as its underlying payment gateway. The app was launched on Android and iOS platform.
+  		<ul>
+
+  			<li>Built and maintained the Discover Search screen of Tez android app that serves as an entry point for discovering users, merchants and payment methods.</li>
+  			<li>
+			Implemented a low bandwidth phonebook syncing mechanism. Built a caching layer to improve latency of loading Tez contacts. Architected payment gateways in the app for paying through various methods like UPI ID, bank account number, phone number etc.
+			</li>
+  			<li>
+			Built the conversation screens responsible for showing the order history with a peer and integrated it with the payment gateways.
+			Built "All transaction" screen to show all payment activities of the user.
+			</li>
+			<li>
+			Built "Rewards" screen in the app that allows users to view the list of scratch cards they won. Built a retryable client to server syncing mechanism that allowed users to scratch cards offline.
+			</li>
+		</ul>
+
+		<h2>Mixer - Conversation and Messaging Infra (2017 - 2018)</h2>
+		Mixer was a migration of Google Pay/Tez's old conversation and messaging infrastructure. The project brought about increased fault tolerancy, developer velocity and lower fanout.
+		<ul>
+
+		<p>
+			<li>
+				Designed and built a low latency microservices based architecture that served conversations and messages with a lower fanout.
+			<li> 
+				Conversation storage service was built on top of spanner. The system decreased latency by 40% of the RPC that serves chatheads with interactions on the homepage of the app.
+			<li> 
+				The system resulted in lower resource utilization and lower fanout.
+			<li> 
+				Made the system more fault tolerant by eliminating single points of failure. If any of our N backends went down, we could continue serving messages from the remaining N-1 backends unlike the old system.
+		</p>
+		</ul>
+
+		<h2>Security and Data Protection in Google Pay (2017 - 2018)</h2>
+			The Google Pay system has a concept of actors decoupled from GAIA IDs. All the individual backends represent ownership of objects using actor ids. This was not very secure since it was easy to fetch anybody's data using the actor ids in the service request. We needed a auth layer for every service that could verify whether the secure gaia mint in the side channel owns the actor whose object it is trying to access.
+			<ul>
+
+			<li>Built a performant library (~10ms at 50p latency) to be used across Google Pay to do
+			authorization check of user data against the end user credentials presented.
+
+			<li>Secured our order
+			backend using this library, wrote down data access policy guidelines for our team and oversaw
+			the security and data protection of a number of other subteams (gold, gifting etc.).
+
+			<li>This project ensured that a
+			compromised server would not be able to access protected data from some other backend
+			servers. It also ensured that a malicious employer would not be able to access data without
+			leaving a trace.
+	</ul>
+
+		<h2>Growth Experiments Framework (2019)</h2>
+			Growth Experiments Framework is a system that made creating experiments a non engineering job.
+			After this was launched it enabled product managers and marketing team to create and run experiments without involving an engineer.
+			It has saved hundreds of engineering hours so far.
+			<br>
+
+		This was a part of a bigger project called Growth Platform which aims to make creating user treatments (offers, notifications etc.) a non engineering job. 
+		The final vision is to be able to build a system that can figure out the perfect target for any treatment using machine learning.
+	<p>
+	   <ul>
+	   <li> 
+	   	Designed and built Growth Experiments Config Backend Service responsible for performing CRUD on experiment configurations.
+	   <li> 
+	   	Designed and built Growth Experiments Evaluation Backend Service, a service to evaluate whether an experiment is enabled in the current context for a particular user.
+	   <li> 
+	   	Built caching layer to be able to serve upto 5000+ QPS.
+	   <li> 
+	   	Built a periodical job that maps the user created configurations in spanner to mendel config files and publishes them to be consumed by this service.
+	   <li> 
+	   	Integrated the system with an internal web tool that can be used by PMs to create experiments.
+
+	   </ul>
+
+
+
+	  <h2>Digital Gifting to Anyone (2019)</h2>
+
+		<p>
+		Built a system to allow digital gifting of various Google Pay objects (scratch cards, collectibles, gold etc.) to anybody outside of Google Pay.
+		</p>
+
+<ul>
+  <li>Upgraded the digital gifting system to support gifting digital collectibles to a phone number outside of Google Pay. The digital gift could be claimed once the phone number onboarded to our system.
+
+  <li>Added functionality to allow sharing gifts via links that could be grabbed on a first come first serve basis.
+
+  <li>Gift to anyone was used to drive the viral  <a href="https://medium.com/quiznext/googlepays-stamp-campaign-what-s-driving-the-obsession-38e969a1091e">Diwali Campaign</a> in the Indian market that led our 28 day daily active users to hit numbers as high as 27.1 million.
+
+    </ul>
+	<h2>
+		Intern at Amazon (2016 - Present)
+	</h2>
+	<p>
+		Developed an architecture that listened to packaging feedback events in realtime and handled
+		them. The architecture was built using a couple of Amazon Web Services namely Redshift and
+		Simple Queuing Service.
+	</p>
+	<hr>
+	<h1>
+		Skills
+	</h1>
+	<hr>
+	<ul>
+		<li> Android App Development </li>
+		<li> Architecting highly scalable systems serving 100M+ users. </li>
+		<li> Microservices </li>
+		<li>Java, C++, Python, HTML, CSS, Javascript</li>
+	</ul>
+	<hr>
+	<h1>
+		Education
+	</h1>
+	<hr>
+	<h4>Bachelor in Computer Science And Engineering, Jadavpur University (2012-2016)</h4>
+	</div>
+
+  </body>
+</html>
