@@ -5,10 +5,10 @@
   --green: #222c3c;
   --grey: grey;
 
-  --background-color: #ae9789;
-  --text-color: #222c3c;
-  --link-hover: #989da6;
-  --link-normal: black;
+  --background-color: #F6F6F2;
+  --text-color: #388087;
+  --link-hover: #C2EDCE;
+  --link-normal: #6Fb3B8;
    
 }
 
@@ -25,7 +25,7 @@
 }
 
 .body {
-	margin-top:200px;
+	margin-top:150px;
 	background: var(--background-color);
 }
 
@@ -98,6 +98,21 @@
 	align-items: center;
   justify-content: center;
 
+}
+
+.fa {
+  padding: 0;
+  font-size: 60px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-media {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 /* unvisited link */
