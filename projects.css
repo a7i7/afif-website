@@ -1,0 +1,70 @@
+
+:root {
+  --background-color: #F6F6F2;
+}
+
+.body {
+  margin-top:100px;
+  background: var(--background-color);
+}
+
+.all {
+  display: flex;
+}
+
+.intro {
+    /*border: 2px solid red;*/
+  display: block;
+  margin-left: 40px;
+  color: var(--text-color);
+  font-family: Helvetica;
+  font-size: 20px;
+  float:right;
+}
+
+img {
+  width: 70%;
+}
+
+.card1 {
+  /* Add shadows to create the "card" effect */
+  margin-left: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: #5C946E33;
+  transition: 0.3s;
+  height: 400px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card2 {
+  /* Add shadows to create the "card" effect */
+  margin-left: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: #DC602E33;
+  transition: 0.3s;
+  height: 400px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.download-button {
+  align-items: center;
+  justify-content: center;
+  margin-left: -16px;
+}
+
+
+.consoleButton {
+  width:200px;
+  padding:0px;
+  margin:0px;
+}
