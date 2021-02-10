@@ -19,11 +19,6 @@
 
 }
 
-
-#green {
-	color:green;
-}
-
 .body {
 	margin-top:150px;
 	background: var(--background-color);
@@ -76,7 +71,7 @@
 
 
 .fa {
-  padding: 0;
+  margin-left: 10px;
   font-size: 60px;
   width: 80px;
   height: 80px;
@@ -88,6 +83,10 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+
+a {
+  font-size: 48px;
 }
 
 /* unvisited link */
@@ -117,7 +116,7 @@ ul {
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 26px;
 }
 
 h1 {
